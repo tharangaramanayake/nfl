@@ -1,0 +1,146 @@
+/* ######################### MENU STYLE #########################*/
+.hamburger-menu-close-button { display: none; }
+#imSite { position: relative; }
+#imMnMn.main-menu { text-align: left; }
+#imMnMn.main-menu > ul { z-index: 10001; display: inline-block; }
+#imMnMn.main-menu li > ul, #imMnMn.main-menu li > div { z-index: 10002; }
+
+/* Main Menu */
+
+#imMnMn.main-menu ul {padding:0;margin:0;list-style-type:none; }
+#imMnMn.main-menu > ul { margin-left: 0px; }
+#imMnMn.main-menu > ul > li { position: relative; margin-left: 2px;  }
+#imMnMn.main-menu > ul > li:first-child { margin-left: 0; }
+
+/* Links */
+
+/* Main Menu style */
+#imMnMn.main-menu > ul > li { cursor: pointer; display: block; float: left; }
+#imMnMn.main-menu > ul > li > a { display: block; }
+#imMnMn.main-menu > ul > li .imMnMnFirstBg { background-image: url('../menu/hor_main.png'); width: 150px; height: 31px; }
+#imMnMn.main-menu > ul > li:hover .imMnMnFirstBg , #imMnMn.main-menu > ul > li.imMnMnCurrent:hover .imMnMnFirstBg  { background-image: url('../menu/hor_main_h.png'); }
+#imMnMn.main-menu > ul > li.imMnMnSeparator .imMnMnFirstBg  { background-image: none; cursor: auto; }
+#imMnMn.main-menu > ul > li.imMnMnCurrent .imMnMnFirstBg  { background-image: url('../menu/hor_main_c.png'); cursor: auto; }
+#imMnMn.main-menu > ul > li .imMnMnFirstBg .imMnMnImg, #imMnMn.main-menu > ul > li:hover .imMnMnFirstBg .imMnMnImg { overflow: hidden; position: absolute; line-height: 31px; width: 100%; height: 31px; top: 0; left: 0;text-align: left; }
+#imMnMn.main-menu > ul > li .imMnMnFirstBg .imMnMnImg img, #imMnMn.main-menu > ul > li:hover .imMnMnFirstBg .imMnMnImg img { border: none; }
+#imMnMn.main-menu > ul > li .imMnMnFirstBg .imMnMnLevelImg { display: none; }
+#imMnMn.main-menu > ul > li .imMnMnFirstBg .imMnMnHoverIcon { display: none; }
+#imMnMn.main-menu > ul > li:hover .imMnMnFirstBg .imMnMnDefaultIcon { display: none; }
+#imMnMn.main-menu > ul > li:hover .imMnMnFirstBg .imMnMnHoverIcon { display: inline; }
+#imMnMn.main-menu > ul > li.imMnMnSeparator > .imMnMnFirstBg > .imMnMnTxt { display: none; }
+#imMnMn.main-menu > ul > li > a { text-decoration: none; }
+#imMnMn.main-menu > ul > li .imMnMnFirstBg > .imMnMnTxt { overflow: hidden; margin: 0px; padding: 0px;  width: 148px; height: 31px; font: normal normal normal 16pt 'Arial Narrow'; color: #000000; text-align: center; text-decoration: none; line-height: 31px; display: block;}
+#imMnMn.main-menu > ul > li:hover .imMnMnFirstBg > .imMnMnTxt, #imMnMn.main-menu > ul > li.imMnMnCurrent:hover .imMnMnFirstBg > .imMnMnTxt { cursor: pointer; color: #FFFFFF;font-weight: normal;font-style: normal;}
+#imMnMn.main-menu > ul > li.imMnMnCurrent .imMnMnFirstBg > .imMnMnTxt { color: #FFFFFF;font-weight: normal;font-style: normal;}
+#imMnMn.main-menu > ul > li.imMnMnSeparator { background: transparent url('../res/separatorh.png') no-repeat center center; width: 10px; height: 31px; }
+#imMnMn.main-menu .imMnMnFirstBg { position: relative; display: block; background-repeat: no-repeat; cursor: pointer; width: 100%; }
+#imMnMn.main-menu a { border: none; cursor: pointer; }
+#imMnMn.main-menu .imMnMnTxt { text-overflow: ellipsis; white-space: nowrap; }
+#imMnMn.main-menu .imMnMnTxt .imMnMnTextLabel { position: relative; }
+#imMnMn.main-menu .imMnMnTxt .imMnMnTextLabel { word-wrap: normal; white-space: normal; line-height: normal; display: inline-block; vertical-align: middle; margin-top: -4px; }
+#imMnMn.main-menu .imMnMnFirstBg .imMnMnImg { display: block; height: 31px; width: 150px; cursor: pointer; }
+#imMnMn.main-menu .imMnMnFirstBg .imMnMnImg img { position: absolute; }
+
+
+/* MENU POSITION : HORIZONTAL VerticalOneColumn */
+#imMnMn.main-menu ul .autoHide, #imMnMn.main-menu ul div .autoHide { display: none; }
+
+/* ######################### MAIN MENU POSITION #########################*/
+
+/* div: Menu container*/
+#imMnMn.main-menu { z-index:10000; }
+#imMnMn.main-menu > ul { position: relative; }
+#imMnMn.main-menu > ul > li > ul { position: absolute; }
+
+/* First level menu style */
+#imMnMn.main-menu > ul > li { display: inline-block; width:150px; }
+#imMnMn.main-menu > ul > li span { display:block; padding:0;}
+#imMnMn.main-menu a { cursor: pointer; display: block; width:150px;}
+
+/* ########################## SUB MENU POSITION #########################*/
+
+#imMnMn.main-menu.auto ul li ul li { top: 0px; }
+
+/* Second level boxmodel*/
+#imMnMn.main-menu.auto ul li ul li ul { position: absolute; width: 170px; }
+
+/* Hide Levels */
+#imMnMn.main-menu.auto li:hover > ul.auto { display:block; }
+#imMnMn.main-menu.auto li ul.auto { display: none; }
+#imMnMn.main-menu ul ul li .imMnMnBorder { overflow: hidden; }
+.hamburger-menu-background { display: none; }
+#imMnMn.static-menu { z-index: 10001; padding: 0; height: 40px; }
+.static-menu div.imMnMnCustomHTML { display: none; }
+#imMnMn.static-menu { width: 960px; }
+/* ######################### MENU STYLE #########################*/
+.hamburger-menu-close-button { display: none; }
+#imSite { position: relative; }
+#imMnMn.static-menu { text-align: right; }
+#imMnMn.static-menu > ul { z-index: 10001; display: inline-block; }
+#imMnMn.static-menu li > ul, #imMnMn.static-menu li > div { z-index: 10002; }
+
+/* Main Menu */
+
+#imMnMn.static-menu ul {padding:0;margin:0;list-style-type:none; }
+#imMnMn.static-menu > ul { margin-left: 0px; }
+#imMnMn.static-menu > ul > li { position: relative; margin-right: 2px;  }
+#imMnMn.static-menu > ul > li:last-child { margin-right: 0; }
+
+/* Links */
+
+/* Main Menu style */
+#imMnMn.static-menu > ul > li { cursor: pointer; display: block; float: left; }
+#imMnMn.static-menu > ul > li > a { display: block; }
+#imMnMn.static-menu > ul > li .imMnMnFirstBg { background-image: url('../menu/hor_main.png'); width: 150px; height: 31px; }
+#imMnMn.static-menu > ul > li:hover .imMnMnFirstBg , #imMnMn.static-menu > ul > li.imMnMnCurrent:hover .imMnMnFirstBg  { background-image: url('../menu/hor_main_h.png'); }
+#imMnMn.static-menu > ul > li.imMnMnSeparator .imMnMnFirstBg  { background-image: none; cursor: auto; }
+#imMnMn.static-menu > ul > li.imMnMnCurrent .imMnMnFirstBg  { background-image: url('../menu/hor_main_c.png'); cursor: auto; }
+#imMnMn.static-menu > ul > li .imMnMnFirstBg .imMnMnImg, #imMnMn.static-menu > ul > li:hover .imMnMnFirstBg .imMnMnImg { overflow: hidden; position: absolute; line-height: 31px; width: 100%; height: 31px; top: 0; left: 0;text-align: left; }
+#imMnMn.static-menu > ul > li .imMnMnFirstBg .imMnMnImg img, #imMnMn.static-menu > ul > li:hover .imMnMnFirstBg .imMnMnImg img { border: none; }
+#imMnMn.static-menu > ul > li .imMnMnFirstBg .imMnMnLevelImg { display: none; }
+#imMnMn.static-menu > ul > li .imMnMnFirstBg .imMnMnHoverIcon { display: none; }
+#imMnMn.static-menu > ul > li:hover .imMnMnFirstBg .imMnMnDefaultIcon { display: none; }
+#imMnMn.static-menu > ul > li:hover .imMnMnFirstBg .imMnMnHoverIcon { display: inline; }
+#imMnMn.static-menu > ul > li.imMnMnSeparator > .imMnMnFirstBg > .imMnMnTxt { display: none; }
+#imMnMn.static-menu > ul > li > a { text-decoration: none; }
+#imMnMn.static-menu > ul > li .imMnMnFirstBg > .imMnMnTxt { overflow: hidden; margin: 0px; padding: 0px;  width: 148px; height: 31px; font: normal normal normal 16pt 'Arial Narrow'; color: #000000; text-align: center; text-decoration: none; line-height: 31px; display: block;}
+#imMnMn.static-menu > ul > li:hover .imMnMnFirstBg > .imMnMnTxt, #imMnMn.static-menu > ul > li.imMnMnCurrent:hover .imMnMnFirstBg > .imMnMnTxt { cursor: pointer; color: #FFFFFF;font-weight: normal;font-style: normal;}
+#imMnMn.static-menu > ul > li.imMnMnCurrent .imMnMnFirstBg > .imMnMnTxt { color: #FFFFFF;font-weight: normal;font-style: normal;}
+#imMnMn.static-menu > ul > li.imMnMnSeparator { background: transparent url('../res/separatorh.png') no-repeat center center; width: 10px; height: 31px; }
+#imMnMn.static-menu .imMnMnFirstBg { position: relative; display: block; background-repeat: no-repeat; cursor: pointer; width: 100%; }
+#imMnMn.static-menu a { border: none; cursor: pointer; }
+#imMnMn.static-menu .imMnMnTxt { text-overflow: ellipsis; white-space: nowrap; }
+#imMnMn.static-menu .imMnMnTxt .imMnMnTextLabel { position: relative; }
+#imMnMn.static-menu .imMnMnTxt .imMnMnTextLabel { word-wrap: normal; white-space: normal; line-height: normal; display: inline-block; vertical-align: middle; margin-top: -4px; }
+#imMnMn.static-menu .imMnMnFirstBg .imMnMnImg { display: block; height: 31px; width: 150px; cursor: pointer; }
+#imMnMn.static-menu .imMnMnFirstBg .imMnMnImg img { position: absolute; }
+
+
+/* MENU POSITION : HORIZONTAL VerticalOneColumn */
+#imMnMn.static-menu ul .autoHide, #imMnMn.static-menu ul div .autoHide { display: none; }
+
+/* ######################### MAIN MENU POSITION #########################*/
+
+/* div: Menu container*/
+#imMnMn.static-menu { z-index:10000; }
+#imMnMn.static-menu > ul { position: relative; }
+#imMnMn.static-menu > ul > li > ul { position: absolute; }
+
+/* First level menu style */
+#imMnMn.static-menu > ul > li { display: inline-block; width:150px; }
+#imMnMn.static-menu > ul > li span { display:block; padding:0;}
+#imMnMn.static-menu a { cursor: pointer; display: block; width:150px;}
+
+/* ########################## SUB MENU POSITION #########################*/
+
+#imMnMn.static-menu.auto ul li ul li { top: 0px; }
+
+/* Second level boxmodel*/
+#imMnMn.static-menu.auto ul li ul li ul { position: absolute; width: 170px; }
+
+/* Hide Levels */
+#imMnMn.static-menu.auto li:hover > ul.auto { display:block; }
+#imMnMn.static-menu.auto li ul.auto { display: none; }
+#imMnMn.static-menu ul ul li .imMnMnBorder { overflow: hidden; }
+#imMnMn.static-menu > ul {margin-top: 4px;margin-bottom: 4px;margin-right: 0px;} 
+.menu-mobile-logo { display: none; }
